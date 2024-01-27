@@ -6,12 +6,22 @@
     <title>Send SMS</title>
   </head>
   <body>
-    <form action="http://127.0.0.1:5000/send_sms" method="post">
-      <label for="to_number">To Number:</label>
-      <input type="text" name="to_number" required /><br />
-
+    <form
+      action="http://127.0.0.1:5000/send_sms"
+      method="post"
+      enctype="multipart/form-data"
+    >
       <label for="message_body">Message Body:</label>
       <textarea name="message_body" required></textarea><br />
+
+      <label for="image">Image:</label>
+      <input
+        type="file"
+        name="image"
+        accept="image/*"
+        required
+        name="image"
+      /><br />
 
       <button type="submit">Send SMS</button>
     </form>
