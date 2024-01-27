@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send SMS</title>
+  </head>
+  <body>
+    <form
+      action="http://127.0.0.1:5000/send_sms"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <label for="message_body">Message Body:</label>
+      <textarea name="message_body" required></textarea><br />
+
+      <label for="image">Image:</label>
+      <input
+        type="file"
+        name="image"
+        accept="image/*"
+        required
+        name="image"
+      /><br />
+
+      <button type="submit">Send SMS</button>
+    </form>
+  </body>
+</html>
