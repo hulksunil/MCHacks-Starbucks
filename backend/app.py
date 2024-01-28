@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
+# from google_cloud_storage import upload_image_to_storage
 
 # import os
 # from dotenv import load_dotenv
@@ -32,7 +33,7 @@ def send_sms():
     print(image_url)
 
     # Check if the file is a valid image file
-    if image_url and allowed_file(image_url):
+    if image_url: #and allowed_file(image_url):
 
         message = client.messages.create(
             to=to_number,
