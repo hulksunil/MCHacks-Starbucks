@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='logo'>
-                <img src={Logo} alt='logo' />
+                <img width="130" height="130" src={Logo} alt='logo' />
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li className='nav-item'><Link to="/">Home</Link></li>
