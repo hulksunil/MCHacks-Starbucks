@@ -25,25 +25,20 @@ client = Client(account_sid, auth_token)
 def send_sms():
     to_number = TO_NUMBER
     from_number = FROM_NUMBER
-    print("sending message with picture")
 
     message_body = request.form['message_body']
 
-    if 'image' not in request.files:
-        return jsonify({'error': 'No image attached'})
-
-    image_file = request.files['image']
-    print(image_file)
+    image_url = request.form['image']
+    print(image_url)
 
     # Check if the file is a valid image file
-    if image_file and allowed_file(image_file.filename):
+    if image_url and allowed_file(image_url):
 
         message = client.messages.create(
             to=to_number,
             from_=from_number,
             body=message_body,
-            media_url=['https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg']
-            
+            media_url=[image_url]
         )
 
         return jsonify({'message_sid': message.sid})

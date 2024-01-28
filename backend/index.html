@@ -11,18 +11,19 @@
       method="post"
       enctype="multipart/form-data"
     >
-      <label for="message_body">Message Body:</label>
+      <label for="message_body">Message: </label>
       <textarea name="message_body" required></textarea><br />
 
-      <label for="image">Image:</label>
-      <input
-        type="file"
-        name="image"
-        accept="image/*"
-        required
-        name="image"
-      /><br />
-
+      <label for="image">Image online url:</label>
+      <input type="input" name="image" accept="image/*" required /><br />
+      <p>
+        Sample url:
+        https://sugargeekshow.com/wp-content/uploads/2023/10/easy_chocolate_cake_slice.jpg
+      </p>
+      <i
+        >twilio doesn't have access to local networks so it needs to use an
+        online url</i
+      ><br />
       <button type="submit">Send SMS</button>
     </form>
   </body>
