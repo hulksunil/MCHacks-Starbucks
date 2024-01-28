@@ -5,11 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--darkgrey);
-}
-
-.navbar img {
-    width: 80px;
+    background-color: var(--primary);
 }
 
 .nav-menu {

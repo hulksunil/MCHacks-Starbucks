@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaDatabase, FaAsterisk, FaAccusoft } from 'react-icons/fa'
 import './Hero.css'
+import MapContainer from './MapContainer'
 
 const Hero = () => {
     return (
@@ -8,19 +9,9 @@ const Hero = () => {
             <div className='container'>
                 <div className='content'>
                     <div className='col-1'>
-                        <h1>VIGI</h1>
-                        <h1><span className='primary-color'>VigiLENS redefined</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
-                            Architecto iure fuga deleniti sit! Cum doloribus, nesciunt
-                            laboriosam eos praesentium veritatis!</p>
-                        <div className='used-by'>
-                            <p>USED BY</p>
-                            <div className='icons'>
-                                <span><FaDatabase /> Concordia</span>
-                                <span><FaAsterisk /> McGill</span>
-                                <span><FaAccusoft /> McHacks</span>
-                            </div>
-                        </div>
+                        <h1><span className='primary-color'>VigiLens</span></h1>
+                        <h2 style={{color:'grey'}}>Empowering Safety, One Watchful Eye at a Time.</h2>
+                        <p>Introducing VigiLens - our state-of-the-art vigilance camera product! With lightning-fast real-time weapon detection capabilities, it acts as your silent guardian, instantly alerting the nearest police station at the first sign of danger. Stay protected and enjoy peace of mind knowing that our innovative technology is always on the lookout for your safety.</p>
                     </div>
                     <div className='col-2'>
                         <div className='form-layout'>
@@ -38,15 +29,17 @@ const Hero = () => {
                                     <button>Create an account</button>
                                 </form>
                             </div>
+
                             <div className='form-footer'>
                                 <p>
                                     By signing up, you agree to our
                                     <span className='primary-color'> Terms, Data Policy</span>
-                                    and <span className='primary-color'> Cookies Policy</span>.
+                                     and <span className='primary-color'> Cookies Policy</span>.
                                 </p>
                             </div>
                         </div>
                     </div>
+                    <MapContainer/>
                 </div>
             </div>
 
