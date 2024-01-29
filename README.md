@@ -38,3 +38,6 @@ We have thought of a lot more ideas for VigiLENS such as:
 - building a better, more scalable computer vision model with more accuracy
 - video-to-text transformation to describe suspects and the scene to the police
 - detecting other forms of crimes, such as stealing objects, etc. 
+
+## Find out more at
+[Devpost](https://devpost.com/software/vigilens?ref_content=user-portfolio&ref_feature=in_progress)
